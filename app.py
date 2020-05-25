@@ -1,6 +1,6 @@
-''' We will create the api to use locally and test the url provided by github repository.
+""" We will create the api to use locally and test the url provided by github repository.
 Author : Edgar Ocampo
-'''
+"""
 from flask import Flask
 
 app = Flask(__name__)
