@@ -5,13 +5,13 @@ import requests
 from requests.exceptions import RequestException
 
 
-def get_response_api(url='https://my-json-server.typicode.com/hectorip/prueba-ing-backend/db') -> dict:
+def get_response_api(url='https://my-json-server.typicode.com/hectorip/prueba-ing-backend/db') -> list:
     """
     definition for get the response url
     :param url: url direction of the data, it can use to test the local api created or the url declared by Resuelve Test
     :return: data as a dict {} to expose
     """
-    data = {}
+    data = []
     try:
         response = requests.get(url=url)
         data = response.json()['ejemplo_1']
@@ -29,7 +29,7 @@ class solution(object):
     player_goals = [5, 10, 15, 20]
     scopes = list(zip(player_level, player_goals))
 
-    def get_group_percentage(self, data={}) -> list:
+    def get_group_percentage(self, data=[]) -> list:
         """ Function to calculate the group percentage of the team.
         :return: the list [] of the total percentage group for the len of players
         """
@@ -53,7 +53,7 @@ class solution(object):
                 f'you cannot make divisions by zero. <{team_goals}, {minimum_goals_per_level}>')
         return [operation] * len(data)
 
-    def get_individual_percentage(self, data={}) -> list:
+    def get_individual_percentage(self, data=[]) -> list:
         """ Function to calculate the individual percentage player.
         :return: the list [] of the individual percentage
         """
@@ -74,7 +74,7 @@ class solution(object):
                     (player['goles'] / self.scopes[3][1]) * 100)
         return individual_goals
 
-    def get_bonus_per_player(self, data={}) -> list:
+    def get_bonus_per_player(self, data=[]) -> list:
         """ Function to get the individual bonus team.
         :return: the list [] of the bonus per player
         """
@@ -84,7 +84,7 @@ class solution(object):
             team_bonus.append(player['bono'])
         return team_bonus
 
-    def get_salary_per_player(self, data={}) -> list:
+    def get_salary_per_player(self, data=[]) -> list:
         """ Function to get the individual salary team.
         :return: the list [] of the salary per player
         """
@@ -132,7 +132,7 @@ class solution(object):
         operation = [round(r, 2) for r in operation]
         return operation
 
-    def filling_results(self, data={}) -> list:
+    def filling_results(self, data=[]) -> list:
         """
         Filling the results per player into the API
         :return: a list [] of the results
@@ -141,16 +141,3 @@ class solution(object):
         for count, player in enumerate(data):
             player['sueldo_completo'] = self.get_complete_salary()[count]
         return data
-#
-# if __name__ == '__main__':
-#     obj = solution()
-#     import pprint
-#     pprint.pprint(get_response_api())
-#     print(obj.get_group_percentage())
-#     print(obj.get_individual_percentage())
-#     print(obj.get_bonus_per_player())
-#     print(obj.get_salary_per_player())
-#     print(obj.get_percentage_average())
-#     print(obj.get_total_bonus())
-#     print(obj.get_complete_salary())
-#     pprint.pprint(obj.filling_results())
