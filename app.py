@@ -19,6 +19,7 @@ def welcome_home() -> object:
 def get_players() -> dict:
     return jsonify(RESUELVE_FC)
 
+
 @app.route('/team_salary_total')
 def get_team_salary_total() -> dict:
     obj_solution = solution()
@@ -38,6 +39,7 @@ def get_team_salary_total() -> dict:
     logger.info('Getting total salarys per player and adding them.')
     logger.info(obj_solution.get_complete_salary())
     return jsonify(obj_solution.filling_results())
+
 
 if __name__ == '__main__':
     app.run()

@@ -29,13 +29,14 @@ class solution(object):
     player_goals = [5, 10, 15, 20]
     scopes = list(zip(player_level, player_goals))
 
-    def get_group_percentage(self) -> list:
+    def get_group_percentage(self, data={}) -> list:
         """ Function to calculate the group percentage of the team.
         :return: the list [] of the total percentage group for the len of players
         """
+        data = get_response_api()
         team_goals = 0
         minimum_goals_per_level = []
-        for player in get_response_api():
+        for player in data:
             if player['nivel'] == self.scopes[0][0].capitalize():
                 minimum_goals_per_level.append(int(self.scopes[0][1]))
             elif player['nivel'] == self.scopes[1][0].capitalize():
@@ -50,14 +51,15 @@ class solution(object):
         except ZeroDivisionError:
             print(
                 f'you cannot make divisions by zero. <{team_goals}, {minimum_goals_per_level}>')
-        return [operation] * len(get_response_api())
+        return [operation] * len(data)
 
-    def get_individual_percentage(self) -> list:
+    def get_individual_percentage(self, data={}) -> list:
         """ Function to calculate the individual percentage player.
         :return: the list [] of the individual percentage
         """
+        data = get_response_api()
         individual_goals = []
-        for player in get_response_api():
+        for player in data:
             if player['nivel'] == self.scopes[0][0].capitalize():
                 individual_goals.append(
                     (player['goles'] / self.scopes[0][1]) * 100)
@@ -72,21 +74,23 @@ class solution(object):
                     (player['goles'] / self.scopes[3][1]) * 100)
         return individual_goals
 
-    def get_bonus_per_player(self) -> list:
+    def get_bonus_per_player(self, data={}) -> list:
         """ Function to get the individual bonus team.
         :return: the list [] of the bonus per player
         """
+        data = get_response_api()
         team_bonus = []
-        for player in get_response_api():
+        for player in data:
             team_bonus.append(player['bono'])
         return team_bonus
 
-    def get_salary_per_player(self) -> list:
+    def get_salary_per_player(self, data={}) -> list:
         """ Function to get the individual salary team.
         :return: the list [] of the salary per player
         """
+        data = get_response_api()
         team_salary = []
-        for player in get_response_api():
+        for player in data:
             team_salary.append(player['sueldo'])
         return team_salary
 
@@ -117,7 +121,7 @@ class solution(object):
                 f'products with zero give a null result. <{self.get_percentage_average()}, {self.get_bonus_per_player()}>')
         return operation
 
-    def get_complete_salary(self):
+    def get_complete_salary(self) -> list:
         """
         Getting complete salary the bonus per player plus the monthly salary.
         :return: the list [] of the total per player
@@ -128,7 +132,7 @@ class solution(object):
         operation = [round(r, 2) for r in operation]
         return operation
 
-    def filling_results(self) -> list:
+    def filling_results(self, data={}) -> list:
         """
         Filling the results per player into the API
         :return: a list [] of the results
@@ -137,3 +141,16 @@ class solution(object):
         for count, player in enumerate(data):
             player['sueldo_completo'] = self.get_complete_salary()[count]
         return data
+#
+# if __name__ == '__main__':
+#     obj = solution()
+#     import pprint
+#     pprint.pprint(get_response_api())
+#     print(obj.get_group_percentage())
+#     print(obj.get_individual_percentage())
+#     print(obj.get_bonus_per_player())
+#     print(obj.get_salary_per_player())
+#     print(obj.get_percentage_average())
+#     print(obj.get_total_bonus())
+#     print(obj.get_complete_salary())
+#     pprint.pprint(obj.filling_results())
