@@ -1,0 +1,67 @@
+2020-05-27 20:12:53,874 Starting with the calculations per player.
+2020-05-27 20:12:53,874 Getting bonus per player
+2020-05-27 20:12:53,883 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:54,960 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:54,964 [25000, 30000, 10000, 15000]
+2020-05-27 20:12:54,965 Getting salarys per player
+2020-05-27 20:12:54,967 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:55,406 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:55,409 [50000, 100000, 20000, 30000]
+2020-05-27 20:12:55,409 Getting average per player
+2020-05-27 20:12:55,416 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:55,918 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:55,923 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:56,356 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:56,359 [0.8933333333333334, 1.31, 1.26, 1.01]
+2020-05-27 20:12:56,360 Getting bonus per player
+2020-05-27 20:12:56,363 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:56,848 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:56,854 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:57,288 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:57,295 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:57,661 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:57,664 [22333.333333333336, 39300.0, 12600.0, 15150.0]
+2020-05-27 20:12:57,664 Getting total salarys per player and adding them.
+2020-05-27 20:12:57,667 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:58,106 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:58,111 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:58,528 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:58,534 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:58,960 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:58,967 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:59,438 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:59,443 [72333.33, 139300.0, 32600.0, 45150.0]
+2020-05-27 20:12:59,448 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:12:59,877 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:12:59,884 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:00,325 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:00,331 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:00,830 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:00,836 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:01,272 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:01,284 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:01,727 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:01,736 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:02,144 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:02,150 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:02,579 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:02,589 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:03,052 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:03,075 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:03,534 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:03,544 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:03,992 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:03,997 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:04,446 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:04,455 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:04,869 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:04,878 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:05,296 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:05,302 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:05,840 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:05,846 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:06,933 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:06,941 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:07,409 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None
+2020-05-27 20:13:07,415 Starting new HTTPS connection (1): my-json-server.typicode.com:443
+2020-05-27 20:13:07,987 https://my-json-server.typicode.com:443 "GET /hectorip/prueba-ing-backend/db HTTP/1.1" 200 None

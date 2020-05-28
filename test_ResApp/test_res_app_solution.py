@@ -37,6 +37,7 @@ class test_res_app_solution(unittest.TestCase):
         """
         function = self.instance.get_group_percentage(get_response_api(self.url))
         self.assertIsInstance(function, list)
+        self.assertEqual(len(get_response_api(self.url)), 4)
 
     def test_get_individual_percentage(self, data=[]):
         """
@@ -44,6 +45,7 @@ class test_res_app_solution(unittest.TestCase):
         """
         function = self.instance.get_individual_percentage(get_response_api(self.url))
         self.assertIsInstance(function, list)
+        self.assertEqual(len(get_response_api(self.url)), 4)
 
     def test_get_bonus_per_player(self, data=[]):
         """
@@ -51,6 +53,7 @@ class test_res_app_solution(unittest.TestCase):
         """
         function = self.instance.get_bonus_per_player(get_response_api(self.url))
         self.assertIsInstance(function, list)
+        self.assertEqual(len(get_response_api(self.url)), 4)
 
     def test_get_salary_per_player(self, data=[]):
         """
@@ -58,6 +61,7 @@ class test_res_app_solution(unittest.TestCase):
         """
         function = self.instance.get_salary_per_player(get_response_api(self.url))
         self.assertIsInstance(function, list)
+        self.assertEqual(len(get_response_api(self.url)), 4)
 
     def test_get_percentage_average(self):
         """
@@ -87,6 +91,7 @@ class test_res_app_solution(unittest.TestCase):
         """
         function = self.instance.filling_results(get_response_api(self.url))
         self.assertIsInstance(function, list)
+        self.assertEqual(len(get_response_api(self.url)), 4)
 
     def tearDown(self) -> None:
         """
